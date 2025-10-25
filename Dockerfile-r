@@ -1,0 +1,15 @@
+# Use R image with readr and other tidyverse packages preinstalled
+FROM rocker/tidyverse:latest
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy R script into the container
+COPY . .
+COPY install_packages.R /app/
+
+# Install R packages required
+RUN Rscript install_packages.R
+
+# Command to run R script
+CMD ["Rscript", "/app/src/r/titanic-r.R"]
