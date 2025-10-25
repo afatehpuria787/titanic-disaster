@@ -18,7 +18,7 @@ The dataset comes from [Kaggle’s Titanic: Machine Learning from Disaster](http
 ## 🧰 Requirements
 
 You need **Docker** installed on your machine.  
-If not installed yet, follow instructions from: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
+If not installed yet, follow instructions from [Get Docker](https://docs.docker.com/get-docker/).
 
 No local R or Python setup is needed — everything runs inside containers.
 
