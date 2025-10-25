@@ -13,11 +13,11 @@ No local R or Python setup is needed — everything runs inside containers.
 
 --- 
 
-## 💾 Step 1: Clone the repo onto your machine.
+## 💾 Step 1: Clone the repo onto your machine
 
 ---
 
-## 📊 Step 2: Download the Dataset
+## 📊 Step 2: Download the dataset
 
 The dataset comes from [Kaggle’s Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic).
 
