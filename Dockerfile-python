@@ -11,6 +11,5 @@ COPY requirements.txt /app/
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Define the command to run your Python script
-# Replace 'your_script_name.py' with the actual name of your Python script
+# Command to run Python script
 CMD ["python", "src/python/titanic-python.py"]
