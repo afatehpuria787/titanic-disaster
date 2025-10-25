@@ -1,17 +1,6 @@
 # 🛳️ Titanic Disaster Survival Analysis
 
-This repository contains Python and R scripts that clean, wrangle, and create a logistic regression model on the famous Kaggle **Titanic dataset** to predict passenger survival.  It demonstrates end-to-end data analysis and modeling in two languages, each with its own Docker environment.
-
----
-
-## 📊 Dataset
-
-The dataset comes from [Kaggle’s Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic).
-
-### Download Instructions
-1. Go to the Kaggle Titanic competition page.
-2. Scroll down and click **Download All** to get `train.csv` and `test.csv`.
-3. Place both files in:
+This repository contains Python and R scripts that clean, wrangle, and create a logistic regression model on the famous Kaggle **Titanic dataset** to predict passenger survival.  It demonstrates end-to-end data analysis and modeling in two languages, each with its own Docker environment. Both scripts output csv files containing the predictions that the logistic regression model makes on the test data. 
 
 ---
 
@@ -22,21 +11,39 @@ If not installed yet, follow instructions from [Get Docker](https://docs.docker.
 
 No local R or Python setup is needed — everything runs inside containers.
 
+--- 
+
+## 💾 Step 1: Clone the repo onto your machine.
+
 ---
 
-## 🧑‍💻 Running the repo
+## 📊 Step 2: Download the Dataset
 
-As mentioned above, this repo can be run entirely inside **Docker** containers. There are two Docker files, one for Python and one for R. See below for how to build and run the Docker containes for each language.
+The dataset comes from [Kaggle’s Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic).
+
+### Download Instructions
+1. Go to the Kaggle Titanic page above.
+2. Scroll down and click **Download All** to get `train.csv` and `test.csv`.
+3. Create a data folder under the src folder in the cloned repo on your machine.
+4. Save the downloaded datasets in the data folder.
+
+---
+
+## 🧑‍💻 Step 3: Running the repo
+
+As mentioned above, this repo can be run entirely inside **Docker** containers. There are two Docker files, one for Python and one for R. Clone the GitHub repo onto your Desktop and open the files in your preferred text editor. See below for how to build and run the Docker containers for each language in your preferred text editor.
 
 ---
 
 ## 🐍 Running the Python Script
 
+### A. Build the Docker image
+
 ```bash
 docker build -f Dockerfile-python -t titanic-python .
 ```
 
-### 2. Build the Docker image
+### B. Build the Docker image
 
 ```bash
 docker run --rm -it titanic-python
@@ -45,14 +52,13 @@ docker run --rm -it titanic-python
 
 ## 🧮 Running the R Script
 
-### 1. Build the Docker image
-From the project root directory:
+### A. Build the Docker image
 
 ```bash
 docker build -f Dockerfile-r -t titanic-r .
 ```
 
-### 2. Build the Docker image
+### B. Build the Docker image
 
 ```bash
 docker run --rm -it titanic-r
