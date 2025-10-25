@@ -1,6 +1,6 @@
 # 🛳️ Titanic Disaster Survival Analysis
 
-This repository contains Python and R scripts that clean, wrangle, and create a logistic regression model on the famous Kaggle **Titanic dataset** to predict passenger survival.  It demonstrates end-to-end data analysis and modeling in two languages, each with its own Docker environment. Both scripts output csv files containing the predictions that the logistic regression model makes on the test data. 
+This repository contains Python and R scripts that clean and wrangle data, and create a logistic regression model on the famous Kaggle **Titanic dataset** to predict passenger survival.  It demonstrates end-to-end data analysis and modeling in two languages, each with its own Docker environment. Both scripts output csv files containing the predictions that the logistic regression model makes on the test data. 
 
 ---
 
